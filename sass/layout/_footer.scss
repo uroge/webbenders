@@ -1,0 +1,75 @@
+.footer {
+    padding: 5rem 0 13rem 0;
+    border-top: 1px solid $color-line;
+    
+    border-bottom: 4px solid $color-primary-dark;
+    background-image: linear-gradient(to right, $color-primary, $color-primary-light, $color-primary);
+
+    @include respond(tab-land) {
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        text-align: center;
+    }
+
+    &__links {
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+    &__link {
+        @include header-color;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 3.1rem;
+        }
+    }
+
+    &__text {
+        font-size: 2rem;
+        @include orange-color;
+    }
+
+    &__paragraphs {
+        float: right;
+        margin-bottom: .9rem;
+        
+        @include respond(tab-land) {
+            float: none;
+        }
+
+        @include respond(phone) {
+            float: none;
+        }
+    }
+
+    p {
+        @include header-color;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.1rem;
+        }
+    }
+
+    &__logo {
+        font-size: 3.8rem;
+        font-weight: 300;
+        @include orange-color;
+        span {
+            font-weight: 700;
+        }
+        
+        float: right;
+
+         @include respond(tab-land) {
+            float: none;
+        }
+
+        @include respond(phone) {
+            float: none;
+        }
+    }
+}

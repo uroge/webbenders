@@ -1,0 +1,54 @@
+.header {
+    border-top: 4px solid $color-primary-dark;
+    border-bottom: 1px solid $color-line;
+    padding: 6.2rem 0 3.4rem 0;
+    background-image: linear-gradient(to bottom,
+    $color-primary, $color-primary-light 25%, $color-primary-light 25%, $color-primary);
+    background-repeat: no-repeat;
+    position: relative;
+    
+    @include respond(tab-land) {
+        padding: 7rem 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem 0;
+    }
+
+    &__text-box {
+        width: 75rem;
+ 
+        @include respond(tab-port) {
+            width: 100%;
+            margin-top: 10rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__portraits {
+        margin-top: 9.9rem;
+        @include clearfix;
+
+        &-single {
+            height: 14rem;
+            width: 14rem;
+            background-color: $color-brown;
+            border-radius: 5px;
+            position: relative;
+            z-index: 100;
+            -webkit-box-shadow: 0px 7px 5px 0px rgba($color-black, 0.65); 
+            box-shadow: 0px 3px 2px 0px rgba($color-black, 0.65);
+            
+        }
+
+        &-text {
+            position: absolute;
+            color: $color-white;
+            top: 105%;
+        }
+    }
+}

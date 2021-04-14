@@ -1,0 +1,166 @@
+.section-our-work {
+    padding: 5.4rem 0 8rem 0;
+    border-top: 1rem solid $color-grey-light-2;
+    border-bottom: 1rem solid $color-grey-light-3;
+    background-color: $color-grey-light-1;
+    position: relative;
+    overflow: hidden;
+
+    @include respond(phone) {
+        padding: 4.5rem 0;
+    }
+
+    &__text {
+        width: 85%;
+
+        @include respond(phone) {
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__links {
+        display: inline-block;
+        border-bottom: 2px solid $color-grey-light-4;
+        margin-bottom: 3rem;
+        @include respond(tab-port) {
+            display: block;
+        }
+    }
+
+    &__list {
+        margin-left: calc((100vw - 95rem) / 2);
+        list-style: none;
+        margin-bottom: 2rem;
+
+        @include respond(tab-land) {
+            margin-left: 10rem;
+        }
+
+        @include respond(phone) {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2.4rem;
+
+            @include respond(phone) {
+                margin-right: 2rem;
+            }
+        }
+
+        
+
+        a {
+            text-decoration: none;
+            color: $color-grey-light-text;
+        }
+
+        .active {
+            color: $color-blue-text;
+        }
+    }
+}
+
+.browser-image {
+    position: absolute;
+    height: 47.2rem;
+    width: 73rem;
+    top: 18%;
+    right: -3%;
+    background-image: linear-gradient(
+        -50deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 2%, 
+        transparent 90%),
+        url('../img/browser-image.jpg');
+    transform: scale(1);
+
+    @include respond(tab-land) {
+        right: -35%;
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+
+.br-image-col {
+    @include respond(phone) {
+        display: none;
+    }
+}
+
+.business {
+    padding: 6rem 0 11rem 0;
+    border-bottom: 1rem solid $color-grey-light-2;
+
+    @include respond(tab-land) {
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        text-align: center;
+    }
+
+    &__row-1 {
+        margin-bottom: 2rem!important;
+        padding-bottom: 5.6rem;
+        border-bottom: 1px solid $color-grey-light-4;
+
+        @include respond(phone) {
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+    }
+
+    &__row-2 {
+        margin-bottom: 2rem!important;
+
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+    }
+
+    .btn {
+        float: right;
+
+        @include respond(tab-land) {
+            float: none;
+            margin: 2.5rem 0 4rem 0;
+        }
+        
+        @include respond(phone) {
+            float: none;
+            margin: 2.5rem 0 4rem 0;
+        }
+    }
+
+    p {
+        float: right;
+        margin-right: calc((100vw - 94rem) / 2);
+        font-size: 2.5rem;
+        color: $color-grey-light-text;
+
+        @include respond(tab-land) {
+            float: none;
+            margin: 0 auto;
+        }
+
+        @include respond(phone) {
+            float: none;
+            margin: 0 auto;
+        }
+    
+    }
+}
