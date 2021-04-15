@@ -207,7 +207,7 @@ $breakpoint arguement choices:
 }
 @media only screen and (max-width: 75em) {
   .section-our-work__list {
-    margin-left: 10rem;
+    margin-left: 3rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
