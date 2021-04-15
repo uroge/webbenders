@@ -11,7 +11,7 @@
     }
     
     @include respond(tab-port) {
-        max-width: 50rem;
+        max-width: 90rem;
         padding: 0 3rem;
     }
 
@@ -24,12 +24,16 @@
             margin-right: $gutter-horizontal;
 
             @include respond(tab-port) {
-                margin-right: 0;
+                margin-right: 2rem;
                 margin-bottom: $gutter-vertical-small;
             }
         }
 
         @include respond(tab-port) {
+            width: calc(50% - 30px) !important;
+        }
+
+        @include respond(phone) {
             width: 100% !important;
         }
     }

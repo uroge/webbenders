@@ -16,6 +16,10 @@
         float: right;
         margin-top: 1.3rem;
 
+        @include respond(tab-port) {
+            float: none;
+        }
+
         @include respond(phone) {
             display: none;
         }
@@ -31,6 +35,10 @@
 
         &:not(:last-child) {
             margin-right: 3.4rem;
+
+            @include respond(tab-port) {
+                margin-right: 1rem;
+            }
         }
     }
 
@@ -41,5 +49,9 @@
 
     @include respond(tab-land) {
         width: 85%;
+    }
+
+    @include respond(tab-port) {
+        width: 100%;
     }
 }

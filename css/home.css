@@ -73,7 +73,7 @@ $breakpoint arguement choices:
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .heading-primary {
     font-size: 5.4rem;
   }
@@ -90,7 +90,7 @@ $breakpoint arguement choices:
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .heading-secondary {
     font-size: 4.2rem;
   }
@@ -102,7 +102,7 @@ $breakpoint arguement choices:
   color: #2d478a;
   animation: trackingInExpand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .heading-tertiary {
     font-size: 4rem;
   }
@@ -125,9 +125,10 @@ $breakpoint arguement choices:
 @media only screen and (max-width: 56.25em) {
   .paragraph-header {
     width: 100%;
+    margin-bottom: 2rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .paragraph-header {
     width: 100%;
     margin: 2rem 0;
@@ -146,15 +147,43 @@ $breakpoint arguement choices:
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 75em) {
+  .section-our-work__row {
+    padding-left: 3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
   .section-our-work {
     padding: 4.5rem 0;
   }
 }
-.section-our-work__text {
-  width: 85%;
+.section-our-work__col {
+  float: left;
+  width: calc((100% - 2rem) / 2);
 }
-@media only screen and (max-width: 37.5em) {
+.section-our-work__col:not(:last-child) {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-our-work__col:not(:last-child) {
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-our-work__col {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .section-our-work__col {
+    width: 100% !important;
+  }
+}
+.section-our-work__text {
+  width: 90%;
+}
+@media only screen and (max-width: 31.25em) {
   .section-our-work__text {
     margin-left: 0;
     width: 100%;
@@ -181,7 +210,7 @@ $breakpoint arguement choices:
     margin-left: 10rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .section-our-work__list {
     margin-left: 0;
     text-align: center;
@@ -193,7 +222,7 @@ $breakpoint arguement choices:
 .section-our-work__item:not(:last-child) {
   margin-right: 2.4rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .section-our-work__item:not(:last-child) {
     margin-right: 2rem;
   }
@@ -226,7 +255,7 @@ $breakpoint arguement choices:
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .br-image-col {
     display: none;
   }
@@ -241,7 +270,7 @@ $breakpoint arguement choices:
     text-align: center;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .business {
     text-align: center;
   }
@@ -251,7 +280,7 @@ $breakpoint arguement choices:
   padding-bottom: 5.6rem;
   border-bottom: 1px solid #e5e2e3;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .business__row-1 {
     padding-bottom: 3rem;
     text-align: center;
@@ -260,7 +289,7 @@ $breakpoint arguement choices:
 .business__row-2 {
   margin-bottom: 2rem !important;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .business__row-2 {
     text-align: center;
   }
@@ -277,10 +306,22 @@ $breakpoint arguement choices:
     margin: 2.5rem 0 4rem 0;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .business .btn {
     float: none;
     margin: 2.5rem 0 4rem 0;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .business__img {
+    height: 16rem;
+    width: 11.5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .business__img {
+    height: 16.5rem;
+    width: 19rem;
   }
 }
 .business p {
@@ -295,7 +336,7 @@ $breakpoint arguement choices:
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 31.25em) {
   .business p {
     float: none;
     margin: 0 auto;

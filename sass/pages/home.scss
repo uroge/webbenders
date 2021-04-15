@@ -10,12 +10,40 @@
     position: relative;
     overflow: hidden;
 
+    &__row {
+        @include respond(tab-land) {
+            padding-left: 3rem;
+        }
+    }
+
     @include respond(phone) {
         padding: 4.5rem 0;
     }
 
+    &__col {
+        float: left;
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                margin-right: 2rem;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
+        }
+
+        @include respond(phone) {
+            width: 100% !important;
+        }
+    }
+
     &__text {
-        width: 85%;
+        width: 90%;
 
         @include respond(phone) {
             margin-left: 0;
@@ -148,6 +176,18 @@
             float: none;
             margin: 2.5rem 0 4rem 0;
         }
+    }
+
+    &__img {
+        @include respond(tab-land) {
+           height: 16rem;
+           width: 11.5rem;
+        }
+
+        @include respond(tab-port) {
+            height: 16.5rem;
+            width: 19rem;
+         }
     }
 
     p {
