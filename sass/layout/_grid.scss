@@ -24,17 +24,19 @@
             margin-right: $gutter-horizontal;
 
             @include respond(tab-port) {
-                margin-right: 2rem;
-                margin-bottom: $gutter-vertical-small;
+                margin-right: 1rem;
             }
         }
 
         @include respond(tab-port) {
             width: calc(50% - 30px) !important;
+            margin-left: 1.4rem;
+            margin-bottom: $gutter-vertical-small;
         }
 
         @include respond(phone) {
             width: 100% !important;
+            margin-left: 0;
         }
     }
 
