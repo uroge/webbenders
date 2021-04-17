@@ -48,7 +48,7 @@
     }
 
     @include respond(tab-land) {
-        width: 85%;
+        width: 100%;
     }
 
     @include respond(tab-port) {
