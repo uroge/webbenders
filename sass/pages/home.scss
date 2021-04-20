@@ -193,13 +193,12 @@
 
     &__img {
         @include respond(tab-land) {
-           height: 16rem;
-           width: 11.5rem;
+           width: 100%;
         }
 
         @include respond(tab-port) {
-            height: 16.5rem;
-            width: 19rem;
+            // height: 16.5rem;
+            width: 50%;
          }
     }
 

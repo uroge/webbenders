@@ -337,14 +337,12 @@ $breakpoint arguement choices:
 }
 @media only screen and (max-width: 75em) {
   .business__img {
-    height: 16rem;
-    width: 11.5rem;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .business__img {
-    height: 16.5rem;
-    width: 19rem;
+    width: 50%;
   }
 }
 .business p {
